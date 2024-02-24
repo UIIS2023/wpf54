@@ -1,0 +1,67 @@
+﻿<Window x:Class="WPFFudbalskiKlub.FrmUgovor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Dodaj/Izmeni ugovor" Height="300" Width="300">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+            <Label Content="UgovorID:"/>
+            <TextBox x:Name="UgovorID" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5">
+            <Label Content="Datum:"/>
+            <DatePicker x:Name="Datum" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="5">
+            <Label Content="NovcanaVrednost:"/>
+            <TextBox x:Name="NovcanaVrednost" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="5">
+            <Label Content="NoviClanID:"/>
+            <ComboBox x:Name="cbNoviClanID" Width="150" Margin="5" SelectedValuePath="NoviClanID"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="5">
+            <Label Content="VlasnikID:"/>
+            <ComboBox x:Name="cbVlasnikID" Width="150" Margin="5" SelectedValuePath="VlasnikID"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="5">
+            <Label Content="MenadzerID:"/>
+            <ComboBox x:Name="cbMenadzerID" Width="150" Margin="5" SelectedValuePath="MenadzerID"/>
+
+        </StackPanel>
+
+
+
+        <Grid>
+
+
+
+            <Button Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="30,0,0,-234"  Click="btnSacuvaj_Click"/>
+
+
+            <Button Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,28,-234" Click="btnOtkazi_Click"/>
+        </Grid>
+
+
+    </Grid>
+</Window>

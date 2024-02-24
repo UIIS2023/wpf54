@@ -1,0 +1,80 @@
+﻿<Window x:Class="WPFFudbalskiKlub.FrmNoviClan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dodaj/izmeni novog clana" Height="487" Width="600">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" MinHeight="39.96"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5,5,5,5">
+            <Label Content="NoviClanID:"/>
+            <TextBox x:Name="NoviClanID" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5,5,5,5">
+            <Label Content="Ime:"/>
+            <TextBox x:Name="Ime" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="5,5,5,5">
+            <Label Content="Prezime:"/>
+            <TextBox x:Name="Prezime" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="5,5,5,5">
+            <Label Content="Adresa:"/>
+            <TextBox x:Name="Adresa" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="5,5,5,5">
+            <Label Content="Grad:"/>
+            <TextBox x:Name="Grad" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="5,5,5,5">
+            <Label Content="Jmbg:"/>
+            <TextBox x:Name="Jmbg" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" Orientation="Horizontal" Margin="5,5,5,5">
+            <Label Content="Kontakt:"/>
+            <TextBox x:Name="Kontakt" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="7" Orientation="Horizontal" Margin="5,5,5,5">
+            <Label Content="Email:"/>
+            <TextBox x:Name="Email" Width="150" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="8" Orientation="Horizontal" Margin="5,5,5,5">
+            <Label Content="OsiguranjeID:"/>
+            <ComboBox x:Name="OsiguranjeID" Width="150" Margin="5"/>
+           
+        </StackPanel>
+
+        <StackPanel Grid.Row="9" Orientation="Horizontal" Margin="5,5,5,5">
+            <Label Content="FudbalskiKlubID:"/>
+            <ComboBox x:Name="FudbalskiKlubID" Width="150" Margin="5"/>
+          
+        </StackPanel>
+
+       
+        <StackPanel Grid.Row="10" Orientation="Horizontal" HorizontalAlignment="Left" Margin="224,37,0,-27" Width="170" Grid.RowSpan="2">
+            <Button Name="btnSacuvaj" Content="Sacuvaj" Width="62" RenderTransformOrigin="-1.384,1.361"  Click="btnSacuvaj_Click"/>
+            <Button Name="btnOtkazi" Content="Otkazi" Width="80"  Click="btnOtkazi_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
